@@ -28,8 +28,6 @@ app.post("/results", function(req, res) {
 	var words = req.body.terms 
 	request("http://api.giphy.com/v1/gifs/search?q=" + req.body.terms + "&api_key=dc6zaTOxFJmzC", function(err, response, body) {
 		var list = JSON.parse(body)
-		
-		console.log(list.data[0].images.downsized_large["url"])
 		for (i=0; i<list.data.length; i++){
 			gifs.push(list.data[i].images.downsized_large["url"])
 			};
