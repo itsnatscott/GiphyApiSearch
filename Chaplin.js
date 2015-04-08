@@ -14,10 +14,12 @@ var gifs = []
 
 //redirects root to  search page
 app.get("/", function(req, res) {
+	gifs = []
 	res.redirect("/chapdex");
 });
 //renders search page
 app.get("/chapdex", function(req, res) {
+	gifs = []
 	res.render("chapdex.ejs");
 });
 
