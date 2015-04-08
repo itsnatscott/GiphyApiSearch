@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Short Silent Film Search</title>
+</head>
+<body>
+<h1> <center> Enter Your Search Terms </center></h1>
+<form action = "/results" method="POST">
+<input type="text" name="terms" placeholder="Key Words" required>
+<button>SEARCH</button>
+</form>
+</body>
+</html>
